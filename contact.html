@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact MRCOFFEE</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="application.css">
+    <link rel="stylesheet" href="/application.css">
+    <script src="/form.js"></script>
 </head>
 
 <body>
@@ -16,15 +17,49 @@
         <div class="container-header">
             <img src="./assets/full_logo_white.png" alt="" srcset="">
             <nav class="menu_nav">
-                <a href="../www/about.html">Accueil</a>
-                <a href="#">Qui sommes-nous?</a>
-                <a href="#">Nous contacter</a>
+                <a href="/index.html">Accueil</a>
+                <a href="/about.html">Qui sommes-nous?</a>
+                <a href="/contact.html">Nous contacter</a>
             </nav>
         </div>
     </header>
-    <main>
+
+    <section id="popup-container">
+        <div class="popup">
+            <div id="popup-message">
+                <h3>MERCI </h3>
+                <h4>Votre message a bien été envoyé !</h4>
+                <h6>Nous essaierons d’y répondre au mieux dans les plus brefs délais. À bientot chez Mr.Coffee</h6>
+                <div class="popup-but">
+                    <button id="popup-button">FERMER</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main id="main-contacts">
         <section id="logo_main">
             <img src="./assets/logo_mrcoffee.png" alt="" srcset="">
+        </section>
+
+        <section id="form_container">
+            <h1>Dites nous tout !</h1>
+            <form>
+                <label for="fname">Nom *</label><br>
+                <input type="text" id="fname" name="fname" pattern="[A-Za-zÀ-ÖØ-öø-ÿ]+" required><br>
+                <label for="lname">Prénom *</label><br>
+                <input type="text" id="lname" name="lname" pattern="[A-Za-zÀ-ÖØ-öø-ÿ]+" required><br>
+                <label for="phone">Téléphone</label><br>
+                <input type="tel" id="phone" name="phone"><br>
+                <label for="email">Adresse mail *</label><br>
+                <input type="email" id="email" required><br>
+                <label for="name">Message *</label><br>
+                <textarea type="text" placeholder="Tapez votre message ici" id="text" name="name" maxlength="288"
+                    size="50" pattern="^[A-Za-zÀ-ÖØ-öø-ÿ0-9\-']/i'" required></textarea><br>
+                <div class="sub-button">
+                    <input id="submit" class="pop_up" type="submit" value="ENVOYER">
+                </div>
+            </form>
         </section>
 
         <section id="contact_h1">

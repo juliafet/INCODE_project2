@@ -1,8 +1,7 @@
-
 *,
 *:after,
 *:before {
-    box-sizing: border-box;
+    box-sizing:inherit;
 }
 
 body {
@@ -45,8 +44,17 @@ body {
 }
 
 main {
-    padding-right: 8%;
-    padding-left: 8%;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding: 0 auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#main-contacts {
+    padding-right: 15%;
+    padding-left: 20%;
     padding: 0 auto;
     margin: 0 auto;
     display: flex;
@@ -116,7 +124,6 @@ main #logo_main img {
         display: none;
     }
     .container-header  .menu_nav {
-
         display: flex;
         justify-content: center;
     }
@@ -150,12 +157,118 @@ main #logo_main img {
 
 }
 
+#form_container h1 {
+    font-size: 30px;
+    line-height: 54px;
+    text-align: center;
+    color: #5C5B5B;
+}
+
+form {
+    font-size: 18px;
+    line-height: 35px;
+    color: #5C5B5B;
+}
+
+form input {
+    background: rgba(106, 123, 139, 0.35);
+    border: none;
+    width: 100%;
+    height: 58px;
+    margin-bottom: 3%;
+}
+
+textarea::placeholder {
+    color: white;
+    padding-left: 10px; 
+    padding-top: 5px;
+    vertical-align: top;
+    resize: none;
+  }
+
+#text {
+    font-size: 16px;
+    font-weight: bold;
+    height: 130px;
+    text-align: left;
+    background: rgba(106, 123, 139, 0.35);
+    border: none;
+    width: 100%;
+    margin-bottom: 3%;
+    padding-top: 1.5%;
+}
+
+.sub-button {
+    display: flex;
+    justify-content: center;
+}
+
+#submit {
+    width: 282px;
+    height: 67px;
+    color: white;
+    font-size: 20px;
+    background: #6A7B8B;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+#popup-container {
+    width: 100vw;
+    height: 608px;
+    top: 40%;
+    display: none;
+    justify-content: center;
+    position: fixed;
+    z-index: 1;
+}
+
+.popup {
+    max-width: 700px;
+    background: #FCFCFC;
+    border: 1px solid #979797;
+    position: fixed;
+    background: #FCFCFC;
+    opacity: 1;
+
+}
+.popup-but {
+    display: flex;
+    justify-content: center;
+}
+
+#popup-button {
+    width: 282px;
+    height: 67px;
+    color: white;
+    font-size: 20px;
+    background: #6A7B8B;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    border: none;
+}
+
+.popup img {
+    width: 93px;
+    height: 137px;
+}
+
+#popup-message {
+    color: #5C5B5B;
+    margin: 10% 20% 10% 20%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 
 #contact_h1 h1 {
-    font-size: 40px;
+    font-size: 30px;
     line-height: 54px;
     text-align: center;
+    color: #5C5B5B;
+
 }
 
 #adress p {
@@ -389,13 +502,13 @@ main #logo_main img {
     }
 }
 
-#button {
+#button_1 {
     display: flex;
 	justify-content: center;
     padding: 5%;
 }
 
-button {
+#button_2 {
     margin: 2%;
     background-color: #6A7B8B;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
@@ -409,6 +522,7 @@ button {
     line-height: 35px;
     text-align: center;
     color: #FFFFFF;
+    border: none;
 }
 
 #parag2 {
@@ -484,6 +598,11 @@ button {
     color: #5C5B5B;
     margin-bottom: 5%;
 }
+
+#submitted {
+    opacity: 0.4;
+}
+
 
 footer {
     left: 0%;
@@ -565,6 +684,7 @@ footer {
         font-weight: normal;
     }
 }
+
 
 
 
